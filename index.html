@@ -35,7 +35,8 @@
   }
   .nav-brand .r1 span { color:#0a1f5c; -webkit-text-fill-color:#0a1f5c; }
   .nav-brand .r2 { font-size:10px; color:#0072ff; letter-spacing:6px; text-transform:uppercase; font-weight:700; }
-  nav ul { list-style:none; display:flex; gap:22px; }
+  nav ul { list-style:none; display:flex; gap:22px; margin:0; padding:0; }
+  nav ul li { list-style:none; }
   nav ul a { color:#0a1f5c; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; transition:color .2s; }
   nav ul a:hover { color:#0072ff; }
 
@@ -247,7 +248,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#about" style="text-decoration:none;display:flex;align-items:center;gap:14px;" class="nav-logo">
+  <a href="#about" style="text-decoration:none;display:flex;align-items:center;gap:14px;cursor:pointer;" class="nav-logo">
     <div style="position:relative;width:48px;height:48px;">
       <div style="position:absolute;inset:0;border-radius:50%;border:2px solid #0072ff;animation:logoPulse 3s ease-in-out infinite;"></div>
       <img src="https://srkhumalo.github.io/rainbow-tutorials/Logo.png" alt="Rainbow Tutorials Logo" style="width:48px;height:48px;object-fit:contain;border-radius:50%;position:relative;z-index:1;">
