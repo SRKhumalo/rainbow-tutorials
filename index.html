@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,21 +21,23 @@
   /* NAV */
   nav {
     background:#ffffff;
-    padding:12px 30px;
+    padding:14px 30px;
     display:flex; align-items:center; justify-content:space-between;
     position:sticky; top:0; z-index:200;
     border-bottom:3px solid #0072ff;
-    box-shadow:0 2px 15px rgba(0,0,0,0.15);
+    box-shadow:0 2px 20px rgba(0,114,255,0.15);
   }
   .nav-logo { display:flex; align-items:center; gap:14px; }
   .nav-brand .r1 {
-    font-size:22px; font-weight:900; letter-spacing:3px;
+    font-size:24px; font-weight:900; letter-spacing:3px;
     background:linear-gradient(90deg,#00c6ff,#0072ff,#0a1f5c);
     -webkit-background-clip:text; -webkit-text-fill-color:transparent;
+    text-shadow:none;
   }
-  .nav-brand .r2 { font-size:10px; color:#555; letter-spacing:5px; text-transform:uppercase; }
+  .nav-brand .r1 span { color:#0a1f5c; -webkit-text-fill-color:#0a1f5c; }
+  .nav-brand .r2 { font-size:10px; color:#0072ff; letter-spacing:6px; text-transform:uppercase; font-weight:700; }
   nav ul { list-style:none; display:flex; gap:22px; }
-  nav ul a { color:#0a1f5c; text-decoration:none; font-size:13px; font-weight:600; letter-spacing:1px; text-transform:uppercase; transition:color .2s; }
+  nav ul a { color:#0a1f5c; text-decoration:none; font-size:13px; font-weight:700; letter-spacing:1px; text-transform:uppercase; transition:color .2s; }
   nav ul a:hover { color:#0072ff; }
 
   /* BANNER */
@@ -246,10 +249,13 @@
 <!-- NAV -->
 <nav>
   <div class="nav-logo">
-    <img src="https://srkhumalo.github.io/rainbow-tutorials/Logo.png" alt="Rainbow Tutorials Logo" style="width:44px;height:44px;object-fit:contain;border-radius:50%;">
+    <div style="position:relative;width:48px;height:48px;">
+      <div style="position:absolute;inset:0;border-radius:50%;border:2px solid #0072ff;animation:logoPulse 3s ease-in-out infinite;"></div>
+      <img src="https://srkhumalo.github.io/rainbow-tutorials/Logo.png" alt="Rainbow Tutorials Logo" style="width:48px;height:48px;object-fit:contain;border-radius:50%;position:relative;z-index:1;">
+    </div>
     <div class="nav-brand">
-      <span class="r1">RAINBOW</span>
-      <span class="r2">TUTORIALS</span>
+      <span class="r1">RAIN<span>BOW</span></span>
+      <span class="r2">✦ TUTORIALS ✦</span>
     </div>
   </div>
   <ul>
