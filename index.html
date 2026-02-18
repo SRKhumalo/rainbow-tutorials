@@ -70,8 +70,7 @@
     0%,100%{ box-shadow:0 0 0 4px #0072ff,0 0 0 8px rgba(0,114,255,0.2),0 0 40px rgba(0,114,255,0.4); }
     50%{ box-shadow:0 0 0 4px #00c6ff,0 0 0 8px rgba(0,198,255,0.2),0 0 50px rgba(0,198,255,0.5); }
   }
-  .logo-text-ring { position:absolute; inset:-8px; animation:spin 18s linear infinite; }
-  @keyframes spin { to { transform:rotate(360deg); } }
+
 
   .hero h1 { font-size:clamp(30px,6vw,56px); font-weight:900; line-height:1.1; margin-bottom:16px; color:#fff; }
   .hero h1 .hl {
@@ -267,12 +266,7 @@
   <div class="hero-bg"></div>
   <div class="hero-content">
     <div class="logo-wrap">
-      <svg class="logo-text-ring" viewBox="0 0 160 160" style="position:absolute;inset:-10px;width:calc(100%+20px);height:calc(100%+20px)">
-        <defs><path id="circle-path" d="M80,80 m-65,0 a65,65 0 1,1 130,0 a65,65 0 1,1 -130,0"/></defs>
-        <text font-size="9.5" fill="#00c6ff" font-weight="700" letter-spacing="3.5" font-family="Segoe UI,sans-serif">
-          <textPath href="#circle-path">✦ EMPOWERING STUDENTS ✦ QUALITY EDUCATION ✦ EXCELLENCE ✦</textPath>
-        </text>
-      </svg>
+
       <div class="logo-outer">
         <img src="https://srkhumalo.github.io/rainbow-tutorials/Logo.png" alt="Rainbow Tutorials Logo" style="width:120px;height:120px;object-fit:contain;border-radius:50%;">
       </div>
