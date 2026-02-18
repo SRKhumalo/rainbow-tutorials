@@ -6,7 +6,18 @@
 <title>Rainbow Tutorials - Matric Rewrite & Extra Lessons</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family:'Segoe UI',sans-serif; color:#333; }
+  body {
+    font-family:'Segoe UI',sans-serif; color:#333;
+    background-image:url('https://srkhumalo.github.io/rainbow-tutorials/flyer.jpg'),url('https://srkhumalo.github.io/rainbow-tutorials/Flyer.jpg');
+    background-size:cover; background-position:center;
+    background-attachment:fixed; background-repeat:no-repeat;
+  }
+  /* Overlay all sections so content stays readable */
+  .why { background:rgba(247,248,252,0.92) !important; }
+  .subjects { background:rgba(255,255,255,0.92) !important; }
+  .grades { background:rgba(247,248,252,0.92) !important; }
+  .pricing { background:rgba(255,255,255,0.92) !important; }
+  .contact { background:rgba(247,248,252,0.92) !important; }
 
   /* ── NAV ── */
   nav {
@@ -40,14 +51,11 @@
     position:relative; min-height:100vh;
     display:flex; align-items:center; justify-content:center;
     overflow:hidden; text-align:center; padding:40px 20px;
+    background-image:linear-gradient(rgba(5,5,20,0.75),rgba(5,5,20,0.75)),url('https://srkhumalo.github.io/rainbow-tutorials/flyer.jpg');
+    background-size:cover; background-position:center; background-attachment:fixed;
   }
-  /* Simulated photo collage background using CSS art of students */
   .hero-bg {
-    position:absolute; inset:0;
-    background:
-      linear-gradient(rgba(5,5,20,0.72),rgba(5,5,20,0.72)),
-      url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600"><rect width="800" height="600" fill="%23111"/><rect x="0" y="0" width="400" height="300" fill="%231a1a3e" rx="0"/><rect x="400" y="0" width="400" height="300" fill="%230d0d2b" rx="0"/><rect x="0" y="300" width="400" height="300" fill="%230d0d2b" rx="0"/><rect x="400" y="300" width="400" height="300" fill="%231a1a3e" rx="0"/></svg>');
-    background-size:cover; background-position:center;
+    display:none;
   }
 
   /* Real photo grid overlay - circles like the flyer */
